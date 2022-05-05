@@ -33,7 +33,7 @@ public class ClientDAO extends CommonDAO{
             System.out.println("\nClient " + client.getNomClient() + " créer avec succès..");
 
         } catch (SQLIntegrityConstraintViolationException d) {
-            System.out.println("Doublon trouvé. Le client " + client.getNoClient() + " existe déja..");
+            System.out.println("\n   Doublon trouvé. Le client " + client.getNoClient() + " existe déja..");
         } catch (SQLException e) {
             e.printStackTrace();
         }
